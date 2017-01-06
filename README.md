@@ -7,12 +7,14 @@ Mitä tapahtui asennuksen jälkeen - Fedora 25
 - 500 GB
 - 8 GB
 
-## Powerline ja tmux
+## Powerline ja TMUX
+
+**Powerline**
 
 ```
 sudo dnf install powerline
 ```
-Powerline oletukseksi lisämällä seuraava ~/.bashrc tiedostoon
+Määritin Powerlinen oletukseksi lisämällä seuraavan ~/.bashrc tiedostoon
 
 ```
 if [ -f `which powerline-daemon` ]; then
@@ -22,15 +24,34 @@ if [ -f `which powerline-daemon` ]; then
   . /usr/share/powerline/bash/powerline.sh
 fi
 ```
+**TMUX**
 
 ```
 sudo dnf install tmux-powerline
 ```
 
-Lisää seuraava ~/.tmux.conf tiedostoon
+Lisäsin seuraavan ~/.tmux.conf tiedostoon
 
 ```
 source "/usr/share/tmux/powerline.conf"
 ```
 **Lähde:** https://fedoramagazine.org/add-power-terminal-powerline/
 
+Otin käyttöön valmiin asetustiedoston osoitteesta https://github.com/gpakosz/.tmux . Asensin asetustiedoston ohjeiden mukaan eikä siinä ilmennyt mitään ongelmia.
+
+## Jekyll
+
+Asensin Jekyll -generaattorin suorittamalla seuraavat komennot:
+
+```
+sudo dnf install ruby-devel  
+sudo dnf install redhat-rpm-config
+sudo gem install jekyll
+
+sudo dnf group install "C Development Tools and Libraries"
+sudo dnf install rubygems-devel
+sudo dnf install nodejs
+sudo gem install bundler
+```
+
+**Lähde:** http://linuxsuperuser.com/install-jekyll-on-fedora-23/
