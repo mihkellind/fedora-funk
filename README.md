@@ -67,4 +67,4 @@ Komentotulkki ilmoitti, että Gulp asentui hakemistoon
 /usr/lib/node_modules/gulp-cli/bin/gulp.js
 ```
 
-
+**Lähde:** https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
