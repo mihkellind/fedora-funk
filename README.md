@@ -55,3 +55,11 @@ sudo gem install bundler
 ```
 
 **Lähde:** http://linuxsuperuser.com/install-jekyll-on-fedora-23/
+
+## Gulp
+
+```
+sudo npm install --global gulp-cli
+```
+Komentotulkki ilmoitti, että Gulp asentui hakemistoon
+```/usr/lib/node_modules/gulp-cli/bin/gulp.js```
