@@ -62,4 +62,9 @@ sudo gem install bundler
 sudo npm install --global gulp-cli
 ```
 Komentotulkki ilmoitti, että Gulp asentui hakemistoon
-```/usr/lib/node_modules/gulp-cli/bin/gulp.js```
+
+```
+/usr/lib/node_modules/gulp-cli/bin/gulp.js
+```
+
+
